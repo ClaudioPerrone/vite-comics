@@ -1,5 +1,6 @@
 <script>
     import AppHeader from './components/AppHeader.vue';
+    import ComicsList from './components/ComicsList.vue';
     import AppMain from './components/AppMain.vue';
     import AppFooter from './components/AppFooter.vue';
 
@@ -14,7 +15,13 @@
 
 <template>
     <AppHeader></AppHeader>
-    <AppMain></AppMain>
+
+    <main>
+        <AppMain>
+            
+        </AppMain>
+        <!-- METTERE LA PARTE BLU DEL MAIN -->
+    </main>
     <AppFooter></AppFooter>
 </template>
 

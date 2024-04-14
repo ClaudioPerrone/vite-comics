@@ -5,8 +5,26 @@
 </script>
 
 <template>
-    <h1>test2</h1>
+    <main>
+
+        <div class="container">
+            <div class="content">
+                <------ CONTENT HERE
+
+            </div>
+        </div>
+    </main>
 </template>
 
 <style scoped lang="scss">
+    @use '../styles/partials/variables' as *;
+
+    main {
+        padding: 30px 0;
+        background-color: $brand-secondary-darker
+    }
+
+    .content {
+        color: white;
+    }
 </style>
