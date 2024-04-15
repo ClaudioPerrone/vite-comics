@@ -7,7 +7,8 @@
 <template>
     <header class="container d-flex justify-content-between">
         <div class="logo">
-            logo
+            <img src="./src/assets/img/dc-logo.png" alt="">
+            Logo
         </div>
         <div class="list">
             <ul class="d-flex px-2">
@@ -37,9 +38,7 @@ header {
         LOGO
 
 ----------------------- */
-.logo{
-    color: $brand-primary;
-}
+
 /* ----------------------
 
         LIST

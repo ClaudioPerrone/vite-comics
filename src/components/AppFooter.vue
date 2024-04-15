@@ -7,47 +7,51 @@
 <template>
     <section class="footer">
         <div class="first-footer">
-            <div class="container d-flex list">
-                <ul class="DC-comics">
-                    <h3>DC COMICS</h3>
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movies</li>
-                    <li>TV</li>
-                    <li>Games</li>
-                    <li>Videos</li>
-                    <li>News</li>
-                </ul>
-                <ul class="shop">
-                    <h3>SHOP</h3>
-                    <li>Shop DC</li>
-                    <li>Shop DC Collectibles</li>
-                </ul>
-                <ul class="DC">
-                    <h3>DC</h3>
-                    <li>Term Of Use</li>
-                    <li>Privacy Policy (New)</li>
-                    <li>Ad Choises</li>
-                    <li>ADvertising</li>
-                    <li>Jobs</li>
-                    <li>Subscriptions</li>
-                    <li>Talent Workshops</li>
-                    <li>CPSC Certificates</li>
-                    <li>Ratings</li>
-                    <li>Shop Help</li>
-                    <li>Contact Us</li>
-                </ul>
-                <ul class="sites">
-                    <h3>SITES</h3>
-                    <li>DC</li>
-                    <li>MAD Magazines</li>
-                    <li>DC Kind</li>
-                    <li>DC Univers</li>
-                    <li>DC Power Visa</li>
-                </ul>
-            </div>
-            <div class="DC-logo-footer">
-                <img src="./src/assets/img/dc-logo-bg.png" alt="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 d-flex list">
+                        <ul class="DC-comics">
+                            <h3>DC COMICS</h3>
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>TV</li>
+                            <li>Games</li>
+                            <li>Videos</li>
+                            <li>News</li>
+                        </ul>
+                        <ul class="shop">
+                            <h3>SHOP</h3>
+                            <li>Shop DC</li>
+                            <li>Shop DC Collectibles</li>
+                        </ul>
+                        <ul class="DC">
+                            <h3>DC</h3>
+                            <li>Term Of Use</li>
+                            <li>Privacy Policy (New)</li>
+                            <li>Ad Choises</li>
+                            <li>ADvertising</li>
+                            <li>Jobs</li>
+                            <li>Subscriptions</li>
+                            <li>Talent Workshops</li>
+                            <li>CPSC Certificates</li>
+                            <li>Ratings</li>
+                            <li>Shop Help</li>
+                            <li>Contact Us</li>
+                        </ul>
+                        <ul class="sites">
+                            <h3>SITES</h3>
+                            <li>DC</li>
+                            <li>MAD Magazines</li>
+                            <li>DC Kind</li>
+                            <li>DC Univers</li>
+                            <li>DC Power Visa</li>
+                        </ul>
+                    </div>
+                    <div class="col-8 DC-logo-footer img-fluid">
+                        <img src="../src/assets/img/dc-logo-bg.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -111,14 +115,8 @@ h4 {
     line-height: 40px;
 }
 
-.socials {
-    &div {
-        padding: o 10px;
-    }
-}
-
 .first-footer {
-    background-image: url("./src/assets/img/footer-bg.jpg");
+    background-image: url("../src/assets/img/footer-bg.jpg");
 }
 
 .list {
@@ -129,7 +127,10 @@ h4 {
     }
 }
 
-.DC-logo-footer {
-    background-image: url("./src/assets/img/dc-logo-bg.png");
+.col-8 {
+    background-image: url("../src/assets/img/dc-logo-bg.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 70%;
 }
 </style>
