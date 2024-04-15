@@ -1,24 +1,28 @@
 <script>
     export default {
         name: 'ComicCard',
+        props: {
+            comicInfo: Object
+        }
     }
 </script>
 
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="card col-2">
-                <img class="image" src="" alt="">
-
-            </div>
-            <h4>Titolo</h4>
-        </div>
+    <div class="card">
+        <img :src=comicInfo.thumb alt="">
     </div>
+    <h4 class="title">{{ comicInfo.series }}</h4>
 </template>
 
 <style scoped lang="scss">
-.card {
-    background-color: coral;
 
+.title {
+    color: white;
+}
+img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 200px;
 }
 </style>

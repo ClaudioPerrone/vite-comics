@@ -1,7 +1,11 @@
 <script>
+    import ComicsList from './ComicsList.vue';
+
     export default {
         name: "AppMain",
-
+        components: {
+            ComicsList
+        },
         props: {
             image: String,
             title: String
@@ -10,11 +14,9 @@
 </script>
 
 <template>
-    <div class="hero">
-
-    </div>
+    <div class="hero"></div>
     <main>
-
+        <ComicsList></ComicsList>
     </main>
 </template>
 
@@ -23,7 +25,7 @@
 
     main {
         padding: 30px 0;
-        background-color: $brand-secondary-darker
+        background-color: $brand-secondary-darker;
     }
 
     .hero {

@@ -2,13 +2,13 @@
     import ComicCard from './ComicCard.vue';
 
     export default {
-        name: "ComicsList",
+        name: 'ComicsList',
         components: {
             ComicCard
         },
         data() {
             return {
-                comics : [
+                comics: [
                     {
                         "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
                         "price": "$19.99",
@@ -40,43 +40,43 @@
                         "type": "comic book"
                     },
                     {
-                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg/revision/latest?cb=20080809201655",
+                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg",
                         "price": "$2.99",
                         "series": "Batman Beyond",
                         "type": "comic book"
                     },
                     {
-                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg/revision/latest/scale-to-width-down/1200?cb=20130627211607",
+                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg",
                         "price": "$3.99",
                         "series": "Batman/Superman",
                         "type": "comic book"
                     },
                     {
-                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg/revision/latest?cb=20200929145132",
+                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg",
                         "price": "$4.99",
                         "series": "Batman/Superman Annual",
                         "type": "comic book"
                     },
                     {
-                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/54/Batman_The_Joker_War_Zone_Vol_1_1.jpg/revision/latest?cb=20200929124651",
+                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/54/Batman_The_Joker_War_Zone_Vol_1_1.jpg",
                         "price": "$5.99",
                         "series": "Batman: The Joker War Zone",
                         "type": "comic book"
                     },
                     {
-                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/6/64/Batman_Three_Jokers_Collected.jpg/revision/latest?cb=20201123054610",
+                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/6/64/Batman_Three_Jokers_Collected.jpg",
                         "price": "$6.99",
                         "series": "Batman: Three Jokers",
                         "type": "comic book"
                     },
                     {
-                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Batman_White_Knight_Presents_Harley_Quinn_Vol_1_1.jpg/revision/latest?cb=20201124094800",
+                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Batman_White_Knight_Presents_Harley_Quinn_Vol_1_1.jpg",
                         "price": "$4.99",
                         "series": "Batman: White Knight Presents: Harley Quinn",
                         "type": "comic book"
                     },
                     {
-                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Catwoman_Vol_2_1.jpg/revision/latest?cb=20160303223223",
+                        "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Catwoman_Vol_2_1.jpg",
                         "price": "$16.99",
                         "series": "Catwoman",
                         "type": "graphic novel"
@@ -89,13 +89,23 @@
 
 
 <template>
-    <section class="comics-list">
-test Batman_Three_Jokers_Collected
-    </section>
+    <div class="container">
+        <div class="row">
+            <div v-for="comic in comics">
+                <ComicCard :comicInfo="comic"></ComicCard>
+            </div>
+        </div>
+    </div>
 </template>
 
 
 <style scoped lang="scss">
+    @use '../styles/partials/variables' as *;
 
-
+    .row {
+        div {
+            flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+    }
 </style>

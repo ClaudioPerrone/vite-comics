@@ -8,7 +8,7 @@
     <header class="container d-flex justify-content-between">
         <div class="logo">
             <img src="./src/assets/img/dc-logo.png" alt="">
-            Logo
+            Logo logo
         </div>
         <div class="list">
             <ul class="d-flex px-2">
