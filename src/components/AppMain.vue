@@ -1,18 +1,20 @@
 <script>
     export default {
-        name: "AppMain"
+        name: "AppMain",
+
+        props: {
+            image: String,
+            title: String
+        }
     }
 </script>
 
 <template>
+    <div class="hero">
+
+    </div>
     <main>
 
-        <div class="container">
-            <div class="content">
-                <------ CONTENT HERE
-
-            </div>
-        </div>
     </main>
 </template>
 
@@ -24,7 +26,9 @@
         background-color: $brand-secondary-darker
     }
 
-    .content {
-        color: white;
+    .hero {
+        background-image: url("../src/assets/img/jumbotron.jpg");
+        background-size: 100%;
+        height: 300px;
     }
 </style>
